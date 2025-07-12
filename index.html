@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A TO DO LIST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📝 A TO-DO LIST</h1>
+
+    <div class="input-section">
+      <input type="text" id="inptext" placeholder="Enter a task">
+      <button id="addbtn">Add</button>
+      <button id="clearallbtn">Clear All</button>
+    </div>
+
+    <div class="options">
+      <input type="text" id="searchInput" placeholder="Search tasks...">
+      
+      <select id="sortTasks">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+
+      <select id="filterTasks">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </div>
+
+    <ul id="tasklist"></ul>
+    <p id="noTasksMessage" style="display: none;">No tasks found.</p>
+  </div>
+  <footer class="footer">
+    Made with <span class="heart">❤️</span> by <strong>Osama</strong> 😊
+  </footer>
+
+  <script src="script.js"></script>
+</body>

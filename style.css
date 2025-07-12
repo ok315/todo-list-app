@@ -1,0 +1,142 @@
+/* Completed task style */
+.Completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI Emoji', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 🌄 Beautiful background */
+body {
+  background: linear-gradient(to right, #5996f7, #bcd4e0); /* Light blue gradient */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+/* 📦 Main container */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input + Add/Clear buttons */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+/* Inputs and dropdowns */
+input[type="text"], select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+/* 🔘 Buttons */
+button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #006eff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #0056cc;
+}
+
+/* Filter & sort section */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Task list layout */
+#tasklist {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tasklist li {
+  background-color: #f7f9fc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+#tasklist li span {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+/* Crossed-out completed task */
+.Completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* "No tasks found" message */
+#noTasksMessage {
+  text-align: center;
+  color: #d9534f;
+  font-style: italic;
+}
+
+/* 🦶 Sticky Footer */
+.footer {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  padding: 14px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ❤️ Heart in footer */
+.footer .heart {
+  color: #e25555;
+}
